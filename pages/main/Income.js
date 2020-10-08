@@ -1,14 +1,14 @@
 import React from "react";
 
-import MainNavbar from "../components/navbar";
-import SidebarMobile from "../components/navbar/SidebarMobile";
-import SidebarDesktop from "../components/navbar/SidebarDesktop";
+import MainNavbar from "../../components/navbar";
+import SidebarMobile from "../../components/navbar/SidebarMobile";
+import SidebarDesktop from "../../components/navbar/SidebarDesktop";
 import {
   useSidebarContext,
   useSidebarToggleContext,
-} from "../context/SidebarState";
+} from "../../context/SidebarState";
 
-const Dashboard = () => {
+const Income = () => {
   return (
     <div className="h-screen flex overflow-hidden bg-gray-100">
       {/* Off-canvas menu for mobile */}
@@ -17,7 +17,7 @@ const Dashboard = () => {
       {/* Static sidebar for desktop */}
       <SidebarDesktop />
 
-      {/* // Dashboard Area */}
+      {/* // Income Area */}
       <div className="flex flex-col w-0 flex-1 overflow-hidden">
         <MainNavbar />
         <main
@@ -25,7 +25,7 @@ const Dashboard = () => {
           tabIndex={0}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-            <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
+            <h1 className="text-2xl font-semibold text-gray-900">Income</h1>
           </div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
             {/* Replace with your content */}
@@ -40,4 +40,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Income;
