@@ -1,0 +1,8 @@
+.main-card {
+    transition: transform 100ms ease-in, background-color 200ms ease-in ;
+    cursor: pointer;
+}
+
+.main-card:hover {
+    transform: scale(1.02);
+}
